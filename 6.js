@@ -1,12 +1,28 @@
+function Sum(a,b){
+    return a + b;
+}
+function Vch(a,b){
+    return a - b;
+}
+function Pr(a,b){
+    return a * b;
+}
+function del(a,b){
+    if(b!=0){
+    return a / b;
+    }
+    else alert("На ноль делить нельзя!");
+}
+
 function Operation(a,b,op){
     switch(op){
-        case "+": return a + b;
+        case "+": Sum(a,b);
         break;
-        case "-": return a - b;
+        case "-": Vch(a,b);
         break;
-        case "*": return a * b;
+        case "*": Pr(a,b);
         break;
-        case "/": return a / b;
+        case "/": del(a,b);
         break;
         default: return "Введите корректный знак операции";
         break;
