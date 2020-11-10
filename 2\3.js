@@ -1,3 +1,11 @@
+function countBasketPrice(arr){
+    var sum=0;
+    for(var i=0; i<arr.length;i++){
+        sum += parseInt(arr[i].price);
+    }
+    return sum;
+}
+
 var storeBag=[
     {
         name: "drass",
@@ -14,8 +22,4 @@ var storeBag=[
 
 ];
 
-var sum=0;
-for(var i=0; i<storeBag.length;i++){
-    sum += parseInt(storeBag[i].price);
-}
-alert("Сумма товаров: "+sum);
+alert("Сумма товаров: "+countBasketPrice(storeBag));
