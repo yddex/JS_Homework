@@ -15,5 +15,5 @@ function NumObj(number){
 }
 var num = +prompt("Введите число от 0 до 999:");
 var obj = new NumObj(num);
-console.log("Сотни: "+obj.sot+"\nесятки: "+obj.des+"\nЕдиницы: "+obj.ed);
+console.log("Сотни: "+obj.sot+"\nДесятки: "+obj.des+"\nЕдиницы: "+obj.ed);
 </script>
