@@ -7,8 +7,8 @@ function NumObj(number){
     }
     else{
         this.sot=parseInt(number/100);
-        this.des=parseInt((number-this.sot*100)/10);
-        this.ed=parseInt(number-this.sot*100-this.des*10);
+        this.des=parseInt((number%100)/10);
+        this.ed=parseInt(number%10);
         correct = true;
     }
 
