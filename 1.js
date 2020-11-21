@@ -7,8 +7,8 @@ function NumObj(number){
     }
     else{
         this.sot=parseInt(number/100);
-        this.des=parseInt((number%100)/10);
-        this.ed=Math.floor(number%10);
+        this.des=Math.floor((number%100)/10);
+        this.ed=number%10;
         correct = true;
     }
 
